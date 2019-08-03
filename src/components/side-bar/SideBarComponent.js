@@ -11,7 +11,12 @@ const SideBarComponent = () => (
     <div className="side-bar__content">
       <div>
         {MenuDefinition.map(menu => (
-          <MenuItem key={menu.name} label={menu.label} to={menu.route} />
+          <MenuItem
+            key={menu.name}
+            label={menu.label}
+            to={menu.route}
+            Icon={menu.icon}
+          />
         ))}
       </div>
     </div>
