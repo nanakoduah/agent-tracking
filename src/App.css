@@ -4,9 +4,15 @@
   background-color: var(--color-app-content-background);
 }
 
-.app__content-wrapper {
+.app__header-content-container {
   display: flex;
   flex: 1;
   flex-direction: column;
   height: 100vh;
+}
+
+.app__content-container {
+    padding: var(--app-content-padding-top) 10px;
+    height: 100%;
+    overflow: hidden auto;
 }

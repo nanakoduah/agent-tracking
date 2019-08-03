@@ -18,13 +18,15 @@ const App = () => (
           render={() => (
             <div className="app__wrapper">
               <SideBar />
-              <div className="app__content-wrapper">
+              <div className="app__header-content-container">
                 <Header />
-                <Route
-                  path={appRoutes.home}
-                  component={() => <div>Home</div>}
-                />
-                <Route path={appRoutes.dashboard} component={Dashboard} />
+                <div className="app__content-container">
+                  <Route
+                    path={appRoutes.home}
+                    component={() => <div>Home</div>}
+                  />
+                  <Route path={appRoutes.dashboard} component={Dashboard} />
+                </div>
               </div>
             </div>
           )}

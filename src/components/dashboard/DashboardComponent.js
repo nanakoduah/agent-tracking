@@ -1,3 +1,13 @@
 import React from 'react';
 
-export default () => <div>Dash board component</div>;
+import './DashboardComponent.css';
+
+import KPIBar from '../kpi-bar';
+
+const DashboardComponent = () => (
+  <div className="dashboard">
+    <KPIBar />
+  </div>
+);
+
+export default DashboardComponent;
