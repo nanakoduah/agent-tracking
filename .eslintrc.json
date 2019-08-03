@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/sort-comp": 0,
+    "react/require-default-props": 0,
+    "react/prefer-stateless-function": 1,
+    "prettier/prettier": "error",
+    "prefer-promise-reject-errors": 0,
+    "no-shadow": 0,
+    "import/no-named-as-default": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          ".storybook/**",
+          "**/__stories__/**",
+          "**/__tests__/**"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "linebreak-style": 0
+  },
+  "env": {
+    "jest": true,
+    "browser": true
+  }
+}
