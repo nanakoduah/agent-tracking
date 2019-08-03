@@ -9,6 +9,7 @@
 
 .side-bar__header {
   height: var(--header-height);
+  border: solid 1px var(--color-light-dark-background);
 }
 
 .side-bar__content {

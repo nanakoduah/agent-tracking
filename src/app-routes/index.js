@@ -1,4 +1,5 @@
 export default {
   home: '/home',
-  dashboard: '/dashboard'
+  dashboard: '/dashboard',
+  agentRequest: '/agent-request'
 };

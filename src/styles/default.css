@@ -1,0 +1,28 @@
+html,
+body {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+}
+
+input::placeholder {
+  color: #b6b9c2;
+}
+
+nav,
+ul {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}

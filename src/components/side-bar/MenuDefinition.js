@@ -10,5 +10,10 @@ export default [
     name: 'dashboard',
     label: 'Dashboard',
     route: routes.dashboard
+  },
+  {
+    name: 'agentRequest',
+    label: 'Agent Request',
+    route: routes.agentRequest
   }
 ];
