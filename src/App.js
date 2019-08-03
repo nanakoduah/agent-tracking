@@ -3,7 +3,7 @@ import { Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
-import history from './history';
+import history from './configs/history';
 import appRoutes from './app-routes';
 import Header from './components/header';
 import SideBar from './components/side-bar';
