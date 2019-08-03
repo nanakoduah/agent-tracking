@@ -3,6 +3,7 @@ import React from 'react';
 import './SideBarComponent.css';
 
 import MenuDefinition from './MenuDefinition';
+import MenuItem from './menu-item';
 
 const SideBarComponent = () => (
   <div className="side-bar ">
@@ -10,7 +11,7 @@ const SideBarComponent = () => (
     <div className="side-bar__content">
       <div>
         {MenuDefinition.map(menu => (
-          <div key={menu.name}>{menu.label}</div>
+          <MenuItem key={menu.name} label={menu.label} to={menu.route} />
         ))}
       </div>
     </div>

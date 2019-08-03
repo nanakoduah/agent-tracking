@@ -1,0 +1,13 @@
+.side-bar-menu {
+    display: flex;
+    flex: 1;
+    margin: 15px 0;
+}
+
+.side-bar-menu__link {
+    padding: 10px;
+}
+
+.side-bar-menu__label {
+    color: var(--color-light-font);
+}
