@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  flex: 1;
+  max-height: var(--header-height);
+  background-color: var(--color-base);
+  width: 100%;
+  box-shadow: 0 2px 3px #7c79791f, 0 2px 3px #6b6a6a3d;
+}

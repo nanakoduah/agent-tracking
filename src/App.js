@@ -1,10 +1,12 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 
+import './App.css';
+
 import history from './history';
 import appRoutes from './app-routes';
 import Header from './components/header';
-import AppContent from './components/app-content';
+import SideBar from './components/side-bar';
 import Dashboard from './components/dashboard';
 
 const App = () => (
@@ -14,16 +16,17 @@ const App = () => (
         <Route
           path="/"
           render={() => (
-            <React.Fragment>
-              <Header />
-              <AppContent>
+            <div className="app__wrapper">
+              <SideBar />
+              <div className="app__content-wrapper">
+                <Header />
                 <Route
                   path={appRoutes.home}
                   component={() => <div>Home</div>}
                 />
                 <Route path={appRoutes.dashboard} component={Dashboard} />
-              </AppContent>
-            </React.Fragment>
+              </div>
+            </div>
           )}
         />
       </Switch>

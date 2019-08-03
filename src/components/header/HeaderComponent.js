@@ -1,5 +1,7 @@
 import React from 'react';
 
-const HeaderComponent = () => <div>Basic Header</div>;
+import './HeaderComponent.css';
+
+const HeaderComponent = () => <div className="header">Header Bar</div>;
 
 export default HeaderComponent;

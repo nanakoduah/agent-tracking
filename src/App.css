@@ -1,0 +1,12 @@
+.app__wrapper {
+  display: flex;
+  flex: 1;
+  background-color: var(--color-app-content-background);
+}
+
+.app__content-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
+}
