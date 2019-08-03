@@ -52,10 +52,8 @@ KPIBarItemComponent.propTypes = {
     name: PropTypes.string.isRequired,
     target: PropTypes.number.isRequired,
     achieved: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
     colour: PropTypes.string.isRequired,
-    icon: PropTypes.func.isRequired,
-    iconSize: PropTypes.string.isRequired
+    icon: PropTypes.func.isRequired
   })
 };
 

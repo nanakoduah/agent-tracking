@@ -21,8 +21,7 @@ const KPIBarComponent = ({ kpis = [] }) => {
   const getKPI = kpi => ({
     ...kpi,
     colour: KPI_COLOR_MAP[kpi.name].colour,
-    icon: KPI_COLOR_MAP[kpi.name].icon,
-    iconSize: KPI_COLOR_MAP[kpi.name].iconSize
+    icon: KPI_COLOR_MAP[kpi.name].icon
   });
 
   return (
@@ -38,8 +37,7 @@ KPIBarComponent.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       target: PropTypes.number.isRequired,
-      achieved: PropTypes.number.isRequired,
-      description: PropTypes.string.isRequired
+      achieved: PropTypes.number.isRequired
     })
   )
 };
