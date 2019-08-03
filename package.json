@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "precommit": "lint-staged"
   },
   "browserslist": [
     ">0.2%",
@@ -19,9 +20,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,scss,md}": [
+    "*.{js, jsx, ts, tsx}": [
       "prettier --write",
+      "eslint --fix",
       "git add"
+    ],
+    "*.{.css, .scss}": [
+      "stylelint --fix"
     ]
   },
   "devDependencies": {
@@ -38,7 +43,8 @@
     "install-peers": "^1.0.3",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^3.0.0",
+    "stylelint": "^10.1.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

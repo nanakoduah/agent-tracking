@@ -2,6 +2,7 @@
   "parser": "babel-eslint",
   "extends": ["airbnb", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
+  "parserOptions": { "ecmaVersion": 6 },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "react/sort-comp": 0,
