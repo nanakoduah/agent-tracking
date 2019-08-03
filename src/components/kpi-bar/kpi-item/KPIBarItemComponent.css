@@ -1,0 +1,111 @@
+.kpi-bar-item {
+    --kpi-item-color-red: #ff5252;
+    --kpi-item-color-blue: #33b5e5;
+    --kpi-item-color-yellow: #ffc107;
+    --kpi-item-color-green: #00c851;
+    flex: 1;
+    margin-top: 10px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .kpi-bar-item__wrapper {
+    padding: 10px 20px 0 20px;
+    box-shadow: 0 1px 3px #7c79791f, 0 1px 2px #6b6a6a3d;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .kpi-bar-item__wrapper--red {
+    border-bottom: solid 2px var(--kpi-item-color-red);
+  }
+  
+  .kpi-bar-item__wrapper--blue {
+    border-bottom: solid 2px var(--kpi-item-color-blue);
+  }
+  
+  .kpi-bar-item__wrapper--yellow {
+    border-bottom: solid 2px var(--kpi-item-color-yellow);
+  }
+  
+  .kpi-bar-item__wrapper--green {
+    border-bottom: solid 2px var(--kpi-item-color-green);
+  }
+
+  .kpi-bar-item__header {
+    display: flex;
+    height: 50px;
+  }
+  
+  .kpi-bar-item__tile {
+    position: relative;
+    display: flex;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #7c79791f, 0 5px 6px #6b6a6a3d;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .kpi-bar-item__tile--red {
+    background-color: var(--kpi-item-color-red);
+  }
+  
+  .kpi-bar-item__tile--blue {
+    background-color: var(--kpi-item-color-blue);
+  }
+  
+  .kpi-bar-item__tile--yellow {
+    background-color: var(--kpi-item-color-yellow);
+  }
+  
+  .kpi-bar-item__tile--green {
+    background-color: var(--kpi-item-color-green);
+  }
+  
+  .kpi-bar-item__text {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    color: var(--color-grey-font);
+    font-size: 18px;
+    padding-left: 10px;
+    text-transform: capitalize;
+  }
+  
+  .kpi-bar-item__progress {
+    display: flex;
+    flex: 1;
+    background-color: #dfe9e5;
+    border-radius: 5px;
+    height: 6px;
+  }
+  
+  .kpi-bar-item__body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+  
+  .kpi-bar-item__stats {
+    display: flex;
+    font-size: 14px;
+    padding-bottom: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .kpi-bar-item__target-value {
+    font-weight: 800;
+  }
+  
+  .kpi-bar-item__target2 {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0.5;
+    flex-direction: column;
+  }
+  
+  
+  
