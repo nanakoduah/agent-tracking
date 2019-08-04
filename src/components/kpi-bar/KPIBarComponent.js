@@ -9,6 +9,7 @@ import PaymentIcon from '../../icons/PaymentIcon';
 import RevenueIcon from '../../icons/RevenueIcon';
 import SavingsIcon from '../../icons/SavingsIcon';
 import CustomerIcon from '../../icons/CustomerIcon';
+import { KPIShape } from '../common-props';
 
 const KPI_COLOR_MAP = {
   payment: { colour: 'red', icon: PaymentIcon },
@@ -33,12 +34,6 @@ const KPIBarComponent = ({ kpis = [] }) => {
 };
 
 KPIBarComponent.propTypes = {
-  kpis: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      target: PropTypes.number.isRequired,
-      achieved: PropTypes.number.isRequired
-    })
-  )
+  kpis: PropTypes.arrayOf(KPIShape)
 };
 export default KPIBarComponent;
