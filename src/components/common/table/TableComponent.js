@@ -8,8 +8,14 @@ import { agentShape } from '../../common-props';
 const TableComponent = ({ styles, data, columns, identityField }) => (
   <div className={classNames('table', styles.table)}>
     <div className={classNames('table__header', styles.header)}>
-      {columns.length > 0 &&
-        columns.map(({ field, label }) => <div key={field}>{label}</div>)}
+      <div className="table__row">
+        {columns.length > 0 &&
+          columns.map(({ field, label }) => (
+            <div key={field} className="table__header-cell">
+              {label}
+            </div>
+          ))}
+      </div>
     </div>
     <div className={classNames('table__body', styles.body)}>
       {data.length > 0 &&
@@ -17,7 +23,7 @@ const TableComponent = ({ styles, data, columns, identityField }) => (
           <div key={row[identityField]} className="table__row">
             {columns.length > 0 &&
               columns.map(({ field }) => (
-                <div key={`${field}-${row[field]}`} className="table_row">
+                <div key={`${field}-${row[field]}`} className="table__cell">
                   {row[field]}
                 </div>
               ))}
