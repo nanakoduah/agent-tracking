@@ -44,6 +44,7 @@
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "react-scripts": "^3.0.0",
+    "react-test-renderer": "^16.8.6",
     "stylelint": "^10.1.0"
   },
   "dependencies": {
