@@ -1,0 +1,17 @@
+.table-row {
+    display: flex;
+    width: 100%;
+    min-height: 25px;
+    border-bottom: solid 1px var(--table-border);
+}
+
+.table-row:nth-child(even) {
+    background-color: var(--color-light-font);
+}
+
+.table-row__check-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
