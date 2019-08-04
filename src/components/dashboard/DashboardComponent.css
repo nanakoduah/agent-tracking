@@ -1,5 +1,15 @@
 .dashboard {
     display: flex;
     flex: 1;
+    flex-direction: column;
     height: 100%;
+}
+
+.dashboard__map-container {
+    display: flex;
+    flex: 4;
+    height: 100%;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--color-base);
 }
