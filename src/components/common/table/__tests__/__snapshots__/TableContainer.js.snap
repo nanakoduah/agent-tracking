@@ -1,3 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableContainer should initialize properly 1`] = `Object {}`;
+exports[`TableContainer should initialize properly 1`] = `
+Object {
+  "checkAll": false,
+  "data": Array [
+    Object {
+      "agentCode": "7XTWEGDGTYWTE",
+      "agentName": "BABA FUSEINI",
+      "checked": false,
+      "location": Object {
+        "lat": 8,
+        "lng": -2.3,
+      },
+    },
+    Object {
+      "agentCode": "HFSUYEWWEY89",
+      "agentName": "KOFI KABOKO",
+      "checked": false,
+      "location": Object {
+        "lat": 7.8,
+        "lng": -2.1594,
+      },
+    },
+    Object {
+      "agentCode": "63RRYRTFGH",
+      "agentName": "BABA FUSEINI",
+      "checked": false,
+      "location": Object {
+        "lat": 7.98,
+        "lng": -1.99,
+      },
+    },
+    Object {
+      "agentCode": "RTUSDGD",
+      "agentName": "DUGS MYKEL",
+      "checked": false,
+      "location": Object {
+        "lat": 7.5,
+        "lng": -2.0094,
+      },
+    },
+  ],
+  "selectedData": Array [],
+}
+`;

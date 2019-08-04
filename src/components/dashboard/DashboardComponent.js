@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './DashboardComponent.css';
 
-import { kpiData, agentsData } from './data';
+import { kpiData, agentsData } from '../../__mocks__/data';
 import KPIBar from '../kpi-bar';
 import GMap from '../gmap';
 import Agents from '../agents';

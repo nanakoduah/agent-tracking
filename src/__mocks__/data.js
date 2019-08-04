@@ -28,4 +28,9 @@ const agentsData = [
   }
 ];
 
-export { kpiData, agentsData };
+const AGENTS_TABLE_COLUMNS = [
+  { field: 'agentCode', label: 'Agent Code' },
+  { field: 'agentName', label: 'Agent Name' }
+];
+
+export { kpiData, agentsData, AGENTS_TABLE_COLUMNS };

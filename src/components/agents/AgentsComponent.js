@@ -5,15 +5,15 @@ import './AgentsComponent.css';
 
 import { Table } from '../common';
 import { agentShape } from '../common-props';
-
-const TABLE_COLUMNS = [
-  { field: 'agentCode', label: 'Agent Code' },
-  { field: 'agentName', label: 'Agent Name' }
-];
+import { AGENTS_TABLE_COLUMNS } from '../../__mocks__/data';
 
 const AgentsComponent = ({ agents }) => (
   <div className="agents gl_container">
-    <Table data={agents} columns={TABLE_COLUMNS} identityField="agentCode" />
+    <Table
+      data={agents}
+      columns={AGENTS_TABLE_COLUMNS}
+      primaryField="agentCode"
+    />
   </div>
 );
 

@@ -7,10 +7,22 @@ import './TableComponent.css';
 import { agentShape } from '../../common-props';
 import Row from './row';
 
-const TableComponent = ({ styles, data, columns, identityField }) => (
+const TableComponent = ({
+  styles,
+  data,
+  columns,
+  primaryField,
+  checkAll,
+  onRowCheck
+}) => (
   <div className={classNames('table', styles.table)}>
     <div className={classNames('table__header', styles.header)}>
-      <Row className={styles.header}>
+      <Row
+        className={styles.header}
+        checked={checkAll}
+        onRowCheck={onRowCheck}
+        primaryFieldValue="all"
+      >
         {columns.length > 0 &&
           columns.map(({ field, label }) => (
             <div key={field} className="table__header-cell">
@@ -21,8 +33,15 @@ const TableComponent = ({ styles, data, columns, identityField }) => (
     </div>
     <div className={classNames('table__body', styles.body)}>
       {data.length > 0 &&
-        data.map(row => (
-          <Row key={row[identityField]} className={styles.row}>
+        data.map((row, index) => (
+          <Row
+            key={row[primaryField]}
+            className={styles.row}
+            checked={row.checked}
+            rowIndex={index}
+            onRowCheck={onRowCheck}
+            primaryFieldValue={row[primaryField]}
+          >
             {columns.length > 0 &&
               columns.map(({ field }) => (
                 <div key={`${field}-${row[field]}`} className="table__cell">
@@ -55,7 +74,9 @@ TableComponent.propTypes = {
       label: PropTypes.string
     })
   ),
-  identityField: PropTypes.string.isRequired
+  primaryField: PropTypes.string.isRequired,
+  checkAll: PropTypes.bool,
+  onRowCheck: PropTypes.func.isRequired
 };
 
 export default TableComponent;

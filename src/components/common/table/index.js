@@ -1,3 +1,8 @@
-import TableComponent from './TableComponent';
+import React from 'react';
 
-export default TableComponent;
+import TableComponent from './TableComponent';
+import TableContainer from './TableContainer';
+
+const Table = props => <TableContainer component={TableComponent} {...props} />;
+
+export default Table;
