@@ -12,7 +12,9 @@
 }
 
 .app__content-container {
+    width: 100%;
     padding: var(--app-content-padding-top) 10px;
+    height: var(--app-content-height);
     height: 100%;
-    overflow: hidden auto;
+    overflow-y: auto;
 }

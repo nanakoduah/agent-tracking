@@ -1,7 +1,4 @@
 .gl__container {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
   box-shadow: var(--standard-box-shadow);
   border-radius: 5px;
 }

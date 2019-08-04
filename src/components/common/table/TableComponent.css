@@ -1,0 +1,12 @@
+.table,
+.table__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.table__header {
+    display: flex;
+    flex: 1;
+    height: 60px;
+}
