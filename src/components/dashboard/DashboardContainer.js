@@ -20,10 +20,7 @@ class DashboardContainer extends React.Component {
     selectedAgents: []
   };
 
-  handleAgentSelection = selectedAgents => {
-    console.log('called');
-    this.setState({ selectedAgents });
-  };
+  handleAgentSelection = selectedAgents => this.setState({ selectedAgents });
 
   render() {
     const { kpis, agents, component: Component } = this.props;

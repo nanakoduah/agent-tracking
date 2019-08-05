@@ -24,8 +24,7 @@ class TableContainer extends Component {
 
   state = {
     data: [],
-    selectedData: [],
-    checkAll: false
+    selectedData: []
   };
 
   componentDidMount() {
@@ -44,7 +43,7 @@ class TableContainer extends Component {
     }));
 
     const selectedData = checked ? data : [];
-    this.setState({ data, selectedData, checkAll: checked });
+    this.setState({ data, selectedData });
     this.props.onSelectionChange(selectedData);
   };
 
@@ -70,8 +69,7 @@ class TableContainer extends Component {
     data[index] = newValue;
     this.setState({
       selectedData: newSelectedData,
-      data,
-      checkAll: newSelectedData.length === this.props.data.length
+      data
     });
     this.props.onSelectionChange(newSelectedData);
   };
@@ -86,7 +84,8 @@ class TableContainer extends Component {
 
   render() {
     const { component: Component, columns, primaryField } = this.props;
-    const { selectedData, data, checkAll } = this.state;
+    const { selectedData, data } = this.state;
+    const checkAll = selectedData.length === data.length;
     return (
       <Component
         data={data}
