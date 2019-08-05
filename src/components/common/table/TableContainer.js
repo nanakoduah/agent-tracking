@@ -18,7 +18,8 @@ class TableContainer extends Component {
         label: PropTypes.string
       })
     ),
-    primaryField: PropTypes.string.isRequired
+    primaryField: PropTypes.string.isRequired,
+    onSelectionChange: PropTypes.func
   };
 
   state = {
@@ -44,6 +45,7 @@ class TableContainer extends Component {
 
     const selectedData = checked ? data : [];
     this.setState({ data, selectedData, checkAll: checked });
+    this.props.onSelectionChange(selectedData);
   };
 
   handleSingleCheck = (checked, index) => {
@@ -71,6 +73,7 @@ class TableContainer extends Component {
       data,
       checkAll: newSelectedData.length === this.props.data.length
     });
+    this.props.onSelectionChange(newSelectedData);
   };
 
   handleRowCheck = (checked, primaryFieldValue, index) => {

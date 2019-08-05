@@ -16,8 +16,6 @@
       "error",
       {
         "devDependencies": [
-          ".storybook/**",
-          "**/__stories__/**",
           "**/__tests__/**"
         ]
       }

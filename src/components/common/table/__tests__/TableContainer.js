@@ -21,6 +21,7 @@ describe('TableContainer', () => {
 
   it('should handle selection and deselection properly', () => {
     const component = jest.fn(() => null);
+    const rowSelectionMock = jest.fn();
     const selectedRow = agentsData[2];
     const tree = renderer.create(
       <TableContainer
@@ -28,6 +29,7 @@ describe('TableContainer', () => {
         data={agentsData}
         columns={AGENTS_TABLE_COLUMNS}
         primaryField={PRIMARY_FIELD}
+        onSelectionChange={rowSelectionMock}
       />
     );
 
@@ -53,5 +55,6 @@ describe('TableContainer', () => {
     // handle uncheck all
     onRowCheck(false, 'all');
     expect(instance.state.selectedData.length).toEqual(0);
+    expect(rowSelectionMock).toHaveBeenCalledTimes(4);
   });
 });
