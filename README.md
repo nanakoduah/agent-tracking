@@ -14,14 +14,12 @@ This project is only the frontend bit of an agent tracking system.
 **2. Install dependencies**
 
 ##### npm
-
 ```bash
     npm install
 ```
 
 
 ##### yarn
-
 ```bash
     yarn add
 ```
@@ -29,18 +27,15 @@ This project is only the frontend bit of an agent tracking system.
 **3. Start local server**
 
 ##### npm
-
 ```bash
     npm start
 ```
 
 
 ##### yarn
-
 ```bash
     yarn start
 ```
 
 ### Demo
-
 [hosted demo](https://demo-agent-frontend.herokuapp.com/dashboard)
