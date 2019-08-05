@@ -61,7 +61,10 @@ class TableContainer extends Component {
       );
     }
 
-    // data array is mutated just to avoid looping every time
+    /* data array is mutated just to avoid looping
+        every time and improve performance in case
+        of large data
+     */
     data[index] = newValue;
     this.setState({
       selectedData: newSelectedData,

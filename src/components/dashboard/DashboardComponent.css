@@ -6,13 +6,13 @@
 
 .dashboard__kpi-container {
     display: flex;
-    flex: 1;
 }
 
 .dashboard__agent-map-wrapper {
     display: flex;
     flex: 4;
     margin: 10px 10px 0 10px;
+    max-height: 100%;
 }
 
 .dashboard__agents-container {
