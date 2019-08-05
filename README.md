@@ -1,17 +1,17 @@
 AGENTS TRACKING SYSTEM
 ======================
 
-This is an ongoingn project to develop a tracking systemt 
+This project is only the frontend bit of an agent tracking system.
 
-### [Running On Local Machine]
+### Running On Local Machine
 
-**1. Clone the repository.
+**1. Clone the repository.**
 
 ```bash
     git clone git@github.com:nanakoduah/agent-tracking.git
 ```
 
-**2. Install dependencies
+**2. Install dependencies**
 
 ##### npm
 
@@ -26,7 +26,7 @@ This is an ongoingn project to develop a tracking systemt
     yarn add
 ```
 
-**3. Start local server
+**3. Start local server**
 
 ##### npm
 
@@ -43,4 +43,4 @@ This is an ongoingn project to develop a tracking systemt
 
 ### Demo
 
-[hosted demo](https://demo-agent-frontend.herokuapp.com/dashboard)
+<a href="https://demo-agent-frontend.herokuapp.com/dashboard" target="_blank">hosted demo</a>
