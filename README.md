@@ -43,4 +43,4 @@ This project is only the frontend bit of an agent tracking system.
 
 ### Demo
 
-<a href="https://demo-agent-frontend.herokuapp.com/dashboard" target="_blank">hosted demo</a>
+[hosted demo](https://demo-agent-frontend.herokuapp.com/dashboard)
